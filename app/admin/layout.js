@@ -5,11 +5,9 @@ import React from "react";
 
 export default function Layout(props) {
   return (
-    <html>
-      <body className="">
-        <NavbarAdmin />
-        <div className="">{props.children}</div>
-      </body>
-    </html>
+    <>
+      <NavbarAdmin />
+      <div className="">{props.children}</div>
+    </>
   );
 }
