@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <FooterHeroSection />
-      <section className="flex justify-evenly items-center bg-[#2E3030] py-4 text-[#F7F7F7] w-full flex-wrap gap-y-6">
+      <section className="flex justify-evenly items-center bg-[#2E3030] py-4 text-[#F7F7F7] w-full flex-wrap gap-y-6 border-8 border-[#F7F7F7]">
         <div className="flex flex-col justify-center items-start gap-y-4">
           <h1 className="font-semibold text-2xl">RTI and Contact Us</h1>
           <ul>
