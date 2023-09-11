@@ -8,7 +8,7 @@ export default function Layout(props) {
     <html>
       <body className="">
         <NavbarPress />
-        <div className="min-h-screen">{props.children}</div>
+        <div className="">{props.children}</div>
       </body>
     </html>
   );
