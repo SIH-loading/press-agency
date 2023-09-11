@@ -1,9 +1,13 @@
 import React from "react";
 import { MdDoubleArrow } from "react-icons/md";
+import { IoMdArrowDropdown } from "react-icons/io";
+import youTube from "../assets/youTube.svg";
+import Image from "next/image";
+import Link from "next/link";
 export default function LandingPress() {
   return (
     <>
-      <section className="flex justify-between items-center w-full min-h-[80vh] px-10 bg-gradient-to-b from-[#a3c9f5] via-white to-white">
+      <section className="flex justify-between items-center w-full min-h-[80vh] pl-10 bg-gradient-to-b from-[#a3c9f5] via-white to-white">
         <div className="flex justify-center items-center flex-col gap-y-4 w-3/5">
           <div className="border-2 rounded-3xl border-[#517CD7] min-h-[60vh] w-full p-6 flex flex-col justify-between items-start">
             <div className="flex justify-between items-center text-4xl font-semibold w-full">
@@ -64,7 +68,18 @@ export default function LandingPress() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col gap-y-4 w-2/5"></div>
+        <div className="flex justify-center items-center flex-col gap-y-6 w-2/5">
+          <h1 className="text-2xl font-bold underline">How it works</h1>
+          <div className="bg-black flex justify-center items-center w-96 h-72">
+            <Image alt="youtube" src={youTube} />
+          </div>
+          <Link href="/press-agency/upload">
+            <button className="uppercase py-2 px-20 gap-2 flex justify-center items-center font-semibold text-2xl bg-[#517CD7] rounded-3xl text-white shadow-2xl">
+              <span>upload</span>
+              <IoMdArrowDropdown />
+            </button>
+          </Link>
+        </div>
       </section>
     </>
   );
