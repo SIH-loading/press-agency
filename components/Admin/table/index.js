@@ -1,8 +1,4 @@
-import Link from "next/link";
-import { MdVideoLibrary } from "react-icons/md";
-import React from "react";
-
-export default function Accept() {
+const Table = () => {
   const Data = [
     {
       id: 1,
@@ -54,49 +50,48 @@ export default function Accept() {
     },
   ];
   const fields = [
-    { Name: "File Information", class: "w-80" },
+    { Name: "File Information", class: "w-40" },
     { Name: "File Author", class: "w-40" },
     { Name: "File Size", class: "w-40" },
     { Name: "PDF Attach", class: "w-40" },
     { Name: "Operation", class: "" },
   ];
   return (
-    <div className="w-[80vw] h-full flex justify-center items-center flex-col gap-4">
+    <div>
+      <div className="pb-8 text-4xl font-bold text-center ">Facilities</div>
       <div className="mx-auto">
-        <div className="flex gap-1 border border-solid bg-[#D9D9D9] font-semibold border-black">
+        <div className="flex gap-1 border-2 border-solid">
           {fields.map((el) => {
             return (
               <div
                 key={el.Name}
-                className={`border-l border-black p-5 ${el.class}`}
+                className={`border-l-2 p-5 border-solid ${el.class}`}
               >
                 {el.Name}
               </div>
             );
           })}
         </div>
-        <div className="">
-          {Data.map((el, index) => {
-            const isEvenRow = index % 2 === 0;
-            const rowBackgroundColor = isEvenRow ? "#FFFFFF" : "#F3F4EE";
+        <div className="border-2 border-solid">
+          {Data.map((el) => {
             return (
-              <div
-                className="flex gap-1"
-                key={el.id}
-                style={{ backgroundColor: rowBackgroundColor }}
-              >
+              <div className="flex gap-1" key={el.id}>
                 {/*<div className="w-20 p-5 border-b-2 border-l-2">{el.id}</div>*/}
-                <div className="w-80 p-5 flex justify-start gap-4">
-                  {/* <Link href={`/admin/press-agency/accept/$[{el.operation}`}> */}
-                  <Link href="/press-agency/status/accept/video-description">
-                    <MdVideoLibrary size={30} />
-                  </Link>
+                <div className="w-40 p-5 border-b-2 border-l-2 ">
                   {el.fileInformation}
                 </div>
-                <div className="w-40 p-5">{el.fileAuthor}</div>
-                <div className="w-40 p-5">{el.fileSize}</div>
-                <div className="w-40 p-5 text-[#FF0A0A]">{el.pdfAttach}</div>
-                <div className="w-52 p-5 text-[#3178CA]">{el.operation}</div>
+                <div className="w-40 p-5 border-b-2 border-l-2">
+                  {el.fileAuthor}
+                </div>
+                <div className="w-40 p-5 border-b-2 border-l-2">
+                  {el.fileSize}
+                </div>
+                <div className="w-40 p-5 border-b-2 border-l-2">
+                  {el.pdfAttach}
+                </div>
+                <div className="w-52 p-5 border-b-2 border-l-2 ">
+                  {el.operation}
+                </div>
               </div>
             );
           })}
@@ -113,4 +108,5 @@ export default function Accept() {
       </div>
     </div>
   );
-}
+};
+export default Table;
