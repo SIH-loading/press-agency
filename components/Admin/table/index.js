@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function Pending() {
+const Table = () => {
   const Data = [
     {
       id: 1,
@@ -59,7 +57,8 @@ export default function Pending() {
     { Name: "Operation", class: "" },
   ];
   return (
-    <div className="w-[80vw] h-full flex justify-center items-center flex-col gap-4">
+    <div>
+      <div className="pb-8 text-4xl font-bold text-center ">Facilities</div>
       <div className="mx-auto">
         <div className="flex gap-1 border-2 border-solid">
           {fields.map((el) => {
@@ -109,4 +108,5 @@ export default function Pending() {
       </div>
     </div>
   );
-}
+};
+export default Table;
