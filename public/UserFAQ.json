@@ -1,0 +1,27 @@
+[
+    {
+        "idx": 1,
+        "question":"What is the objective of the Fact Check Unit?",
+        "answer":"The objective of the Fact Check Unit is to act as a deterrent to creators and disseminators of fake news & misinformation and to provide people with an easy avenue to report suspicious and questionable information pertaining to the Government of India for fact-checking."
+    },
+    {
+        "idx": 2,
+        "question":"What kind of complaints can be submitted to the PIB Fact Check Unit?",
+        "answer":"The PIB Fact Check unit only takes up complaints related to the Government of India, its Ministries, Departments, Public Sector entities etc. Any matter that does not pertain to the Union Government is not taken up for evaluation/fact-checking by the Unit."
+    },
+    {
+        "idx": 3,
+        "question":"Does the PIB Fact Check Unit charge any fees for fact checking?",
+        "answer":"No fee is charged by the PIB Fact Check Unit for fact checking."
+    },
+    {
+        "idx": 4,
+        "question":"Does the PIB Fact Check Unit rely on news reports and research published by private organizations?",
+        "answer":"The PIB Fact Check Unit relies only on official sources of information. News reports and other information published by private organizations are not used in the process of verification/evaluation of the veracity of a piece of information related to the business of the Government of India."
+    },
+    {
+        "idx": 5,
+        "question":"Does the Fact Check Unit disclose the identity of the person who submits a query for verification?",
+        "answer":"No, the identity of the persons who submits query for verification is neither disclosed, nor shared while issuing the fact checks."
+    }
+]
