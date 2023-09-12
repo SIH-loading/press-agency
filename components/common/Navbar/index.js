@@ -16,7 +16,7 @@ export default function Navbar() {
     <section className="flex flex-col w-full h-full">
       <section className="flex justify-between items-center px-4 text-lg">
         <Link href={"/"}>
-          <Image src={logo} alt="logo" height={80} width={80} />
+          <Image src={logo} alt="logo" height={70} width={70} />
         </Link>
         <div className="flex justify-center items-center gap-x-6 max-md:hidden">
           <li className="flex justify-center items-center gap-2">
