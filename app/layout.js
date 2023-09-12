@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
@@ -8,7 +9,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className=" text-black">
         <Navbar />
-        <div>{children}</div>
+        {children}
         <Footer />
       </body>
     </html>
