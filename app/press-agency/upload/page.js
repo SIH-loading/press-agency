@@ -1,30 +1,6 @@
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/effect-coverflow";
-// import "swiper/css/pagination";
+import React from "react";
 export default function Upload() {
-  // const [slidesPerView, setSlidesPerView] = useState(3);
-
-  // useEffect(() => {
-  //   // Function to update slidesPerView based on screen width
-  //   const handleResize = () => {
-  //     const newSlidesPerView = window.innerWidth <= 767 ? 1 : 3;
-  //     setSlidesPerView(newSlidesPerView);
-  //   };
-
-  //   // Set initial value of slidesPerView
-  //   handleResize();
-
-  //   // Attach the event listener to handle resize changes
-  //   window.addEventListener("resize", handleResize);
-
-  //   // Clean up the event listener when the component is unmounted
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
   return (
     <section className="flex justify-start items-center flex-col min-h-screen bg-[#ecf3f7] ">
       <form
