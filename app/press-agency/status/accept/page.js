@@ -63,42 +63,40 @@ export default function Accept() {
   return (
     <div className="w-[80vw] h-full flex justify-center items-center flex-col gap-4">
       <div className="mx-auto">
-        <div className="flex gap-1 border-2 border-solid">
+        <div className="flex gap-1 border border-solid bg-[#D9D9D9] font-semibold border-black">
           {fields.map((el) => {
             return (
               <div
                 key={el.Name}
-                className={`border-l-2 p-5 border-solid ${el.class}`}
+                className={`border-l border-black p-5 ${el.class}`}
               >
                 {el.Name}
               </div>
             );
           })}
         </div>
-        <div className="border-2 border-solid">
-          {Data.map((el) => {
+        <div className="">
+          {Data.map((el, index) => {
+            const isEvenRow = index % 2 === 0;
+            const rowBackgroundColor = isEvenRow ? "#FFFFFF" : "#F3F4EE";
             return (
-              <div className="flex gap-1" key={el.id}>
+              <div
+                className="flex gap-1"
+                key={el.id}
+                style={{ backgroundColor: rowBackgroundColor }}
+              >
                 {/*<div className="w-20 p-5 border-b-2 border-l-2">{el.id}</div>*/}
-                <div className="w-80 p-5 border-b-2 border-l-2 flex justify-start gap-4">
+                <div className="w-80 p-5 flex justify-start gap-4">
                   {/* <Link href={`/admin/press-agency/accept/$[{el.operation}`}> */}
-                  <Link href="/admin/press-agency/accept/video-description">
+                  <Link href="/press-agency/status/accept/video-description">
                     <MdVideoLibrary size={30} />
                   </Link>
                   {el.fileInformation}
                 </div>
-                <div className="w-40 p-5 border-b-2 border-l-2">
-                  {el.fileAuthor}
-                </div>
-                <div className="w-40 p-5 border-b-2 border-l-2">
-                  {el.fileSize}
-                </div>
-                <div className="w-40 p-5 border-b-2 border-l-2">
-                  {el.pdfAttach}
-                </div>
-                <div className="w-52 p-5 border-b-2 border-l-2 ">
-                  {el.operation}
-                </div>
+                <div className="w-40 p-5">{el.fileAuthor}</div>
+                <div className="w-40 p-5">{el.fileSize}</div>
+                <div className="w-40 p-5 text-[#FF0A0A]">{el.pdfAttach}</div>
+                <div className="w-52 p-5 text-[#3178CA]">{el.operation}</div>
               </div>
             );
           })}
