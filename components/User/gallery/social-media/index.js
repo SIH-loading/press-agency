@@ -27,8 +27,8 @@ export default function SocialMedia() {
   ];
   return (
     <>
-      <section className="flex justify-center items-center gap-10 flex-col w-ful pt-10 pb-20">
-        <h1 className="text-[#626362] text-center font-semibold text-3xl">
+      <section className="flex justify-center items-center gap-10 flex-col w-full pt-10 pb-20">
+        <h1 className="text-[#626362] underline underline-offset-4 text-center font-semibold text-3xl">
           Social Engagement
         </h1>
         <div className="flex flex-wrap justify-center items-center gap-20 w-full">
@@ -48,7 +48,7 @@ export default function SocialMedia() {
             <h1 className="w-full bg-[#000000] py-4 text-center font-semibold text-2xl text-[#F7F7F7] flex justify-center gap-4 items-center">
               Instagram <RiInstagramLine size={30} />
             </h1>
-            <div className="overflow-y-auto h-[70vh] flex flex-col">
+            <div className="overflow-y-auto h-[70vh] flex flex-col mx-4">
               {data.slice(2, 4).map((item) => {
                 return (
                   <Image alt={item.image} src={item.image} key={item.id} />

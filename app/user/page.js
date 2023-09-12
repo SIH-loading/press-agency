@@ -6,8 +6,8 @@ import React from "react";
 export default function User() {
   return (
     <>
-      {/* <Carousel />
-      <NewsLetter /> */}
+      <Carousel />
+      <NewsLetter />
       <Gallery />
     </>
   );
