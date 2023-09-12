@@ -10,12 +10,14 @@ import logo from "../../common/assets/logo.svg";
 import pib from "../../common/assets/pib.svg";
 import azadi from "../../common/assets/azadi.svg";
 import g20 from "../../common/assets/g20.svg";
-
+import Link from "next/link";
 export default function Navbar() {
   return (
     <section className="flex flex-col w-full h-full">
       <section className="flex justify-between items-center px-4 text-lg">
-        <Image src={logo} alt="logo" height={80} width={80} />
+        <Link href={"/"}>
+          <Image src={logo} alt="logo" height={80} width={80} />
+        </Link>
         <div className="flex justify-center items-center gap-x-6 max-md:hidden">
           <li className="flex justify-center items-center gap-2">
             <BsCalendarCheck size={25} />
