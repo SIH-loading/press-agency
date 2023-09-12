@@ -10,23 +10,23 @@ export default function NavbarUser() {
         <Link className="first-letter:uppercase" href="/about">
           about
         </Link>
-        <Link className="first-letter:uppercase" href="user/news">
+        <Link className="first-letter:uppercase" href="/user/news">
           news
         </Link>
         <Link className="first-letter:uppercase" href="/team">
           team
         </Link>
-        <Link className="first-letter:uppercase" href="user/gallery">
+        <Link className="first-letter:uppercase" href="/user/gallery">
           gallery
         </Link>
         <Link href="user/faq">FAQ</Link>
-        <Link
+        {/* <Link
           className="flex justify-center gap-1 items-center px-10 py-0.5 border-2 rounded-xl"
-          href="press-agency/manual"
+          href="/user/manual"
         >
           <span>Manual</span>
           <MdOutlineArrowDropDown />
-        </Link>
+        </Link> */}
       </div>
       <div className="flex justify-center items-center gap-2">
         <span>Hi, Harsh</span>

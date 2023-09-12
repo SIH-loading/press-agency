@@ -11,19 +11,22 @@ export default function NavbarPress() {
           <Link className="first-letter:uppercase" href="/about">
             about
           </Link>
-          <Link className="first-letter:uppercase" href="press-agency/upload">
+          <Link className="first-letter:uppercase" href="/press-agency/upload">
             upload
           </Link>
           <Link className="first-letter:uppercase" href="/team">
             team
           </Link>
-          <Link className="first-letter:uppercase" href="press-agency/status">
+          <Link
+            className="first-letter:uppercase"
+            href="/press-agency/status/accept"
+          >
             status
           </Link>
-          <Link href="press-agency/faq">FAQ</Link>
+          <Link href="/press-agency/faq">FAQ</Link>
           <Link
             className="flex justify-center gap-1 items-center px-10 py-0.5 border-2 rounded-xl"
-            href="press-agency/manual"
+            href="/press-agency/manual"
           >
             <span>Manual</span>
             <MdOutlineArrowDropDown />
