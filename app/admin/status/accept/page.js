@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { MdVideoLibrary } from "react-icons/md";
 import React from "react";
 
 export default function Accept() {
@@ -52,7 +54,7 @@ export default function Accept() {
     },
   ];
   const fields = [
-    { Name: "File Information", class: "w-40" },
+    { Name: "File Information", class: "w-80" },
     { Name: "File Author", class: "w-40" },
     { Name: "File Size", class: "w-40" },
     { Name: "PDF Attach", class: "w-40" },
@@ -78,7 +80,11 @@ export default function Accept() {
             return (
               <div className="flex gap-1" key={el.id}>
                 {/*<div className="w-20 p-5 border-b-2 border-l-2">{el.id}</div>*/}
-                <div className="w-40 p-5 border-b-2 border-l-2 ">
+                <div className="w-80 p-5 border-b-2 border-l-2 flex justify-start gap-4">
+                  {/* <Link href={`/admin/status/accept/$[{el.operation}`}> */}
+                  <Link href="/admin/status/accept/video-description">
+                    <MdVideoLibrary size={30} />
+                  </Link>
                   {el.fileInformation}
                 </div>
                 <div className="w-40 p-5 border-b-2 border-l-2">
