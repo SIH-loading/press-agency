@@ -8,7 +8,7 @@ export default function NavbarAdmin() {
       <section className="bg-gradient-to-r from-[#3178CA] via-[#0976F790] to-[#a3c9f5] py-2 px-4 flex justify-between items-center text-lg lg:text-2xl h-16 text-white">
         <Link href="/">Home</Link>
         <div className="flex justify-between items-center gap-8 max-md:hidden">
-          <Link className="first-letter:uppercase" href="admin/about">
+          <Link className="first-letter:uppercase" href="about">
             about
           </Link>
           <Link className="first-letter:uppercase" href="/team">

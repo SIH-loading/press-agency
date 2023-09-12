@@ -45,7 +45,7 @@ export default function TutorialPress() {
   ];
   return (
     <div className="flex justify-center items-center text-[#636363] flex-col mb-8">
-      <h1 className="text-3xl font-semibold mb-6 underline underline-offset-4">
+      <h1 className="text-3xl font-semibold underline underline-offset-4">
         Service for the process of uploading the contents
       </h1>
       <div className="flex flex-wrap gap-8 justify-center items-center">
