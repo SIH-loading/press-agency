@@ -7,7 +7,7 @@ export default function Layout(props) {
   return (
     <>
       <NavbarPress />
-      <div className="">{props.children}</div>
+      <div>{props.children}</div>
     </>
   );
 }

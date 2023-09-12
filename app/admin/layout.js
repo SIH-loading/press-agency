@@ -7,7 +7,7 @@ export default function Layout(props) {
   return (
     <>
       <NavbarAdmin />
-      <div className="">{props.children}</div>
+      <div>{props.children}</div>
     </>
   );
 }
