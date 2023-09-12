@@ -11,7 +11,7 @@ export default function Home() {
     },
     {
       id: 2,
-      title: "press",
+      title: "press-agency",
       description:
         "vamus gravida, eros nec tristique iaculis, ante urna tincidunt velit, sed cursus dui ante sed mi. Praesent maximus nunc in nulla tincidunt viverra. In luctus et odio quis aliquam. Morbi vehicula nunc sed imperdiet ultricies. Sed tincidunt porttitor elementum. Aenean id ante enim. Nulla ullamcorper, sapien ut facilisis fringilla, lorem tellus tristique enim, et posuere sapien metus sit amet elit. Donec sit amet imperdiet dui. Integer efficitur mattis eros eu fermentum",
     },
