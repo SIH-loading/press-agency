@@ -1,8 +1,7 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
-import ReactPlayer from 'react-player';
-
+import React, { useState } from "react";
+import ReactPlayer from "react-player";
 const VideoPlayer = () => {
   const [playing, setPlaying] = useState(false);
   const [volume, setVolume] = useState(0.5);
@@ -22,14 +21,15 @@ const VideoPlayer = () => {
   const formatTime = (timeInSeconds) => {
     const minutes = Math.floor(timeInSeconds / 60);
     const seconds = Math.floor(timeInSeconds % 60);
-    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
   };
 
   return (
     <div className="min-h-screen bg-teal-300 flex justify-center items-center flex-col">
       <h1>Hi, I'm a video player</h1>
       <ReactPlayer
-        url="https://drive.google.com/uc?id=1f8QEZwd8Imxtyu4qRKBvsMLzaVIgWF9o" 
+        // url={`https://v1.nocodeapi.com/ayush_testserver/vimeo/NfhTonsLdgllQOwb/videos/${vimeoVideoId}`}
+        url={"https://drive.google.com/uc?id=1f8QEZwd8Imxtyu4qRKBvsMLzaVIgWF9o"}
         playing={playing}
         volume={volume}
         playbackRate={playbackRate}
@@ -39,7 +39,7 @@ const VideoPlayer = () => {
 
       <div className="mt-4">
         <button onClick={() => setPlaying(!playing)} className="border-2 p-2">
-          {playing ? 'Pause' : 'Play'}
+          {playing ? "Pause" : "Play"}
         </button>
         <input
           type="range"
@@ -50,7 +50,8 @@ const VideoPlayer = () => {
           onChange={(e) => setVolume(parseFloat(e.target.value))}
         />
         <div>
-          Current Time: {formatTime(currentTime)} Duration: {formatTime(duration)}
+          Current Time: {formatTime(currentTime)} Duration:{" "}
+          {formatTime(duration)}
         </div>
       </div>
     </div>

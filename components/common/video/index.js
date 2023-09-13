@@ -26,7 +26,7 @@ const VideoPlayer = () => {
   };
 
   return (
-    <div className="min-h-screen bg-teal-300 flex justify-center items-center flex-col">
+    <div className="min-h-screen bg-teal-300 flex justify-center items-center flex-col w-full">
       <h1>Hi, I'm a video player</h1>
       <ReactPlayer
         url="https://drive.google.com/uc?id=1f8QEZwd8Imxtyu4qRKBvsMLzaVIgWF9o" 
@@ -35,9 +35,12 @@ const VideoPlayer = () => {
         playbackRate={playbackRate}
         onProgress={handleProgress}
         className="border-4"
+        height={800}
+        width={800}
+        alt="video"
       />
 
-      <div className="mt-4">
+      <div className="mt-4 flex flex-col gap-4">
         <button onClick={() => setPlaying(!playing)} className="border-2 p-2">
           {playing ? 'Pause' : 'Play'}
         </button>
