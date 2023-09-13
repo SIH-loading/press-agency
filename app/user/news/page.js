@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import video from "@/public/final.mp4";
+// import video from "@/public/final.mp4";
 const VideoPlayer = () => {
   // useEffect(() => {
   //   fetchData();
@@ -49,7 +49,9 @@ const VideoPlayer = () => {
       <h1>Hi, I'm a video player</h1>
       <ReactPlayer
         // url={`https://v1.nocodeapi.com/ayush_testserver/vimeo/NfhTonsLdgllQOwb/videos/${vimeoVideoId}`}
-        url="video"
+        url={
+          "https://drive.google.com/file/d/1f8QEZwd8Imxtyu4qRKBvsMLzaVIgWF9o/view?usp=drivesdk"
+        }
         playing={playing}
         volume={volume}
         playbackRate={playbackRate}
