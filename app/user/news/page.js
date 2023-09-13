@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import video from "@/public/final.mp.4";
+import video from "@/public/final.mp4";
 const VideoPlayer = () => {
   // useEffect(() => {
   //   fetchData();
@@ -49,7 +49,7 @@ const VideoPlayer = () => {
       <h1>Hi, I'm a video player</h1>
       <ReactPlayer
         // url={`https://v1.nocodeapi.com/ayush_testserver/vimeo/NfhTonsLdgllQOwb/videos/${vimeoVideoId}`}
-        url={video}
+        url="video"
         playing={playing}
         volume={volume}
         playbackRate={playbackRate}
@@ -60,7 +60,7 @@ const VideoPlayer = () => {
       <div className="mt-4">
         <button onClick={() => setPlaying(!playing)} className="border-2 p-2">
           {playing ? "Pause" : "Play"}
-        </button>{" "}
+        </button>
         <input
           type="range"
           min={0}
